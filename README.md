@@ -2,32 +2,28 @@
 
 (Pytorch)
 
-<span align="center"><img src="teaser.png" alt="" width="800"/></span>
+![image info](./teaser.png)
 
 This repository contains an implementation corresponing to:
 The full name
 
 Please cite as:
-
-    @inproceedings{
-    }
+@inproceedings{jeddi2020learn2perturb,
+  title={Learn2Perturb: an End-to-end Feature Perturbation Learning to Improve Adversarial Robustness},
+  author={Jeddi, Ahmadreza and Shafiee, Mohammad Javad and Karg, Michelle and Scharfenberger, Christian and Wong, Alexander},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={},
+  year={2020}
+}
 
 This repository includes PyTorch implementation of:
 
-    <ul> 
-        <li> Adversarial attacks 
-            <ol>
-                <li>FGSM</li>
-                <li>PGD</li>
-                <li>C&W</li>
-                <li>EOT</li>
-                <li>one-pixel</li>
-            </ol>
-        </li>
-            
-        <li>Baseline models used in experiments</li>
-        
-        <li>Learn2Perturb Modules</li>
-        
-    </ul>
+- Adversarial attacks 
+    - FGSM
+    - PGD
+    - C&W
+    - EOT
+    - one-pixel
+- Baseline models used in experiments
+- Learn2Perturb Modules
 
