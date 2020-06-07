@@ -69,12 +69,17 @@ def main(args):
         testset = torchvision.datasets.CIFAR100(root='./data', train=False, download=True, transform=transform_test)
 
     trainloader = torch.utils.data.DataLoader(trainset, batch_size=args.batch_size, shuffle=True, num_workers=4)    
-    testloader = torch.utils.data.DataLoader(testset, batch_size=args.batch_size, shuffle=False, num_workers=2)
+    testloader = torch.utils.data.DataLoader(testset, batch_size=args.batch_size, shuffle=False, num_workers=4)
+
+    if args.dataset == 'cifar10':
+        n_classes = 10
+    else: # cifar100
+        n_classes = 100
 
     if args.baseline == 'resnet_v1':
-        net = models.resnet_v1.l2p_resnet_v1(depth= args.res_v1_depth, num_classes= 10)
+        net = models.resnet_v1.l2p_resnet_v1(depth= args.res_v1_depth, num_classes= n_classes)
     else:
-        net = models.resnet_v2.l2p_resnet_v2(num_blocks= args.res_v2_num_blocks, num_classes= 10)
+        net = models.resnet_v2.l2p_resnet_v2(num_blocks= args.res_v2_num_blocks, num_classes= n_classes)
 
     mean = [0.4914, 0.4822, 0.4465]
     std = [0.2023, 0.1994, 0.2010]
@@ -125,8 +130,8 @@ def main(args):
     )
 
     ## create the folder to save models
-    if not os.path.exists(args.model_base):
-        os.makedirs(args.model_base)
+    # if not os.path.exists(args.model_base):
+    #     os.makedirs(args.model_base)
     
     for epoch in range(args.epochs):
         print("epoch: {} / {} ...".format(epoch+1, args.epochs))
@@ -137,9 +142,9 @@ def main(args):
         evaluate(model, testloader, attack='pgd')
         evaluate(model, testloader, attack='fgsm')
 
-        if (epoch +1) % 25 == 0:
-            path = args.model_base + str(epoch + 1) + ".pt"
-            torch.save(model, path)
+        # if (epoch +1) % 25 == 0:
+        #     path = args.model_base + str(epoch + 1) + ".pt"
+        #     torch.save(model, path)
 
 
 if __name__ =='__main__':
