@@ -4,10 +4,9 @@
 
 ![image info](./teaser.png)
 
-This repository contains an implementation corresponing to:
-The full name
+This repository contains an implementation corresponding to our CVPR 2020 paper: "[Learn2Perturb: an End-to-end Feature Perturbation Learning to Improve Adversarial Robustness](https://arxiv.org/abs/2003.01090)"
 
-Please cite as:
+If you find our work useful, please cite it:
 @inproceedings{jeddi2020learn2perturb,
   title={Learn2Perturb: an End-to-end Feature Perturbation Learning to Improve Adversarial Robustness},
   author={Jeddi, Ahmadreza and Shafiee, Mohammad Javad and Karg, Michelle and Scharfenberger, Christian and Wong, Alexander},
