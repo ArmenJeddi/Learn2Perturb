@@ -22,9 +22,11 @@ This repository includes PyTorch implementation of:
 - Adversarial attacks 
     - FGSM
     - PGD
-    - C&W
     - EOT
-    - one-pixel
 - Baseline models used in experiments
 - Learn2Perturb Modules
+
+Pytorch implementations for other adversarial attacks used in this work: [C&W](https://github.com/kkew3/pytorch-cw2) and [few-pixel attack](https://github.com/DebangLi/one-pixel-attack-pytorch)
+
+
 
