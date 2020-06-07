@@ -4,10 +4,10 @@
 
 ![image info](./teaser.png)
 
-This repository contains an implementation corresponing to:
-The full name
+This repository contains an implementation corresponding to our CVPR 2020 paper: "[Learn2Perturb: an End-to-end Feature Perturbation Learning to Improve Adversarial Robustness](https://arxiv.org/abs/2003.01090)". A brief presentation of our work is available at [this youtube link](https://youtu.be/KUJIDZo8azo).
 
-Please cite as:
+If you find our work useful, please cite it as follows:
+```bibtex
 @inproceedings{jeddi2020learn2perturb,
   title={Learn2Perturb: an End-to-end Feature Perturbation Learning to Improve Adversarial Robustness},
   author={Jeddi, Ahmadreza and Shafiee, Mohammad Javad and Karg, Michelle and Scharfenberger, Christian and Wong, Alexander},
@@ -15,15 +15,18 @@ Please cite as:
   pages={},
   year={2020}
 }
+```
 
 This repository includes PyTorch implementation of:
 
 - Adversarial attacks 
     - FGSM
     - PGD
-    - C&W
     - EOT
-    - one-pixel
 - Baseline models used in experiments
 - Learn2Perturb Modules
+
+Pytorch implementations for other adversarial attacks used in this work: [C&W](https://github.com/kkew3/pytorch-cw2) and [few-pixel attack](https://github.com/DebangLi/one-pixel-attack-pytorch)
+
+
 
