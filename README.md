@@ -1,6 +1,6 @@
 ## Learn2Perturb: a noise injection method for adversarial robustness
 
-(Pytorch)
+(Pytorch 1.0)
 
 ![image info](./teaser.png)
 
