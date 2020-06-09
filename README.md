@@ -22,11 +22,12 @@ This repository includes PyTorch implementation of:
 - Adversarial attacks 
     - FGSM
     - PGD
-    - EOT
+    - EOT (Expectation Over Transformations [1])
 - Baseline models used in experiments
 - Learn2Perturb Modules
 
 Pytorch implementations for other adversarial attacks used in this work: [C&W](https://github.com/kkew3/pytorch-cw2) and [few-pixel attack](https://github.com/DebangLi/one-pixel-attack-pytorch)
 
 
-
+### References
+- [1] Athalye, A., Engstrom, L., Ilyas, A., and Kwok, K. Syn- thesizing robust adversarial examples. arXiv preprint arXiv:1707.07397, 2017.
