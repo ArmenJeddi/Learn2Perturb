@@ -11,8 +11,8 @@ If you find our work useful, please cite it as follows:
 @inproceedings{jeddi2020learn2perturb,
   title={Learn2Perturb: an End-to-end Feature Perturbation Learning to Improve Adversarial Robustness},
   author={Jeddi, Ahmadreza and Shafiee, Mohammad Javad and Karg, Michelle and Scharfenberger, Christian and Wong, Alexander},
-  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-  pages={},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={1241-1250},
   year={2020}
 }
 ```
