@@ -115,8 +115,8 @@ class L2P_ResNet_V1(nn.Module):
         x = self.conv_1_3x3(x)
         x = self.bn_1(x)
         if self.add_noise:
-            self.cn1_normal_noise = self.cn1_sigma_map.clone().normal_(0,std)
-            self.cn1_perf = self.cn1_normal_noise * self.cn1_sigma_map
+            self.cn1_normal_noise = torch.randn_like(self.cn1_sigma_map)
+            self.cn1_perf = (self.cn1_normal_noise * self.cn1_sigma_map).cuda(0)
             self.cn1_final_noise = self.cn1_perf.expand(x.size())
             x += self.cn1_final_noise
 
